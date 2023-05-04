@@ -5,6 +5,9 @@ body {
   font-family: 'Reenie Beanie', cursive;
   font-family: 'Share Tech Mono', monospace;
   background-color: #7AD7DF;
+  
+}
+HTML{
   scroll-behavior: smooth;
 }
 
