@@ -239,6 +239,9 @@ a {
     transition: transform 250ms ease-out;
     
   }
+  .wave{    
+    height: 400px;
+  }
 
   .mobile-nav-toggle{
     display: block;
