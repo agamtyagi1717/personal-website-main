@@ -70,7 +70,7 @@ background-color: #F8D8D4;
 
 
 .contact-form{
-  display: none;
+  /* display: none; */
   /* height: 0px; */
   overflow: hidden;  
   background-color: #F8D8D4;
@@ -78,10 +78,55 @@ background-color: #F8D8D4;
 
 
 .contact-form-content{  
+  /* display: flex; */
   width: 50%;
   margin: 10px auto 50px auto;
-  text-align: left;
+  /* text-align: left; */
   line-height: 2;
+  align-items: center;
+}
+
+form{
+  border: 3px solid black;
+  padding: 2vw 4vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+  background: #7AD7DF;
+  backdrop-filter: blur(1rem);
+}
+
+form input, form textarea{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  color: #7AD7DF;
+  width: 50%;
+  border: 2px solid #df827a;
+  background-color: #000;
+  margin: 8px;
+  padding: 16px;
+}
+
+form button {
+  font-family: 'Share Tech Mono', monospace;
+  text-shadow: 1px 1px 0px #000000;
+  color: #ffffff;
+  font-size: 20px;
+  background: #df827a;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 3px;
+  text-decoration: none;
+}
+
+form button:hover {
+  
+  background: #000000;
+  text-decoration: none;
+}
+::placeholder {
+  color: #7AD7DF;
+  opacity: 0.5;
 }
 
 .div4 {
@@ -158,7 +203,7 @@ a {
 }
 
 .contact-btn {
-  border: none;
+  /* border: none; */
   font-family: 'Share Tech Mono', monospace;
   background: #7AD7DF;
   background-image: -webkit-linear-gradient(top, #7AD7DF, #52bdff);
@@ -210,6 +255,7 @@ a {
 }
 
 .primary-header{
+ 
   align-items: center;
   justify-content: space-between;
 }
@@ -218,6 +264,7 @@ a {
   position: fixed;
 }
 .primary-header nav{
+  z-index: 999;
   position: fixed;
   top: 1rem;
   right:0rem;
@@ -234,7 +281,7 @@ a {
   border-left:2px solid #df827a; 
   border-top:2px solid #df827a;
   border-bottom:2px solid #df827a;  
-  
+  /* z-index: 999; */
 
   background: hsl(0 0% 0%/0.875);
   backdrop-filter: blur(1rem);
@@ -265,6 +312,18 @@ a {
 
 @media (max-width: 500px) {
 
+  form input, form textarea{
+    width: 70%;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  form button{
+    font-size: 14px;
+    padding: 8px 17px 8px 17px;
+    border: solid #000000 3px;
+  }
+
   .skill-row{
     width: 70%;
   }
@@ -284,6 +343,7 @@ a {
     font-size: 20px;
   }
   .primary-navigation{
+    z-index: 999;
     --gap: 2.25em;
     position: fixed;
     inset: 0 0 0 30%;
@@ -321,6 +381,7 @@ a {
     display:none;
   }
   .primary-navigation{
+    z-index: 999;
     padding-block: 1rem;
     padding-inline: clamp(3rem, 5vw, 8rem);
   }
