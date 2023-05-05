@@ -70,7 +70,7 @@ background-color: #F8D8D4;
 
 
 .contact-form{
-  /* display: none; */
+  display: none;
   /* height: 0px; */
   overflow: hidden;  
   background-color: #F8D8D4;
