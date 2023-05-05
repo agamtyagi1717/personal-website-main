@@ -13,3 +13,26 @@ navToggle.addEventListener("click", ()=>{
         navToggle.setAttribute("aria-expanded", false);
     }
 })
+
+// const contactCollapsible = document.querySelector(".contact-form");
+// const contactToggle = document.querySelector(".contact-btn");
+
+// contactToggle.addEventListener("click", ()=>{
+//     const visibility = contactCollapsible.getAttribute('data-visible');
+
+//     console.log(visibility);
+
+//     if(visibility==="false"){
+//         contactCollapsible.setAttribute("data-visible", true);
+//         contactToggle.setAttribute("aria-expanded", true);
+//     }
+//     else{
+//         contactCollapsible.setAttribute("data-visible", false);
+//         contactToggle.setAttribute("aria-expanded", false);
+//     }
+
+// })
+
+$("#contact-form-button").click(function () {
+    $("#contact-form-id").slideToggle(300);
+});

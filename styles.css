@@ -54,7 +54,7 @@ h3 {
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
-.dev {
+.flow {
   text-decoration: underline;
 }
 
@@ -68,19 +68,35 @@ h3 {
 background-color: #F8D8D4;
 }
 
-.div3 {
+
+.contact-form{
+  display: none;
+  /* height: 0px; */
+  overflow: hidden;  
+  background-color: #F8D8D4;
+}
+
+
+.contact-form-content{  
+  width: 50%;
+  margin: 10px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.div4 {
   height: 70px;
   background-color: #7AD7DF;
   border-top: solid 2px;
 }
 
-nav {
+/* nav {
   height: 70px;
   background-color: #7AD7DF;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 
-}
+} */
 
 p {
   margin-top: 0;
@@ -141,7 +157,9 @@ a {
   line-height: 2;
 }
 
-.btn {
+.contact-btn {
+  border: none;
+  font-family: 'Share Tech Mono', monospace;
   background: #7AD7DF;
   background-image: -webkit-linear-gradient(top, #7AD7DF, #52bdff);
   background-image: -moz-linear-gradient(top, #7AD7DF, #52bdff);
@@ -158,7 +176,7 @@ a {
   text-decoration: none;
 }
 
-.btn:hover {
+.contact-btn:hover {
   background: #000000;
   text-decoration: none;
 }
@@ -251,6 +269,10 @@ a {
     width: 70%;
   }
 
+  .contact-form-content{
+    width: 70%;
+  }
+
   .div1{
     padding-top: 150px;
   }
@@ -315,3 +337,5 @@ a {
 .primary-navigation[data-visible="true"]{
   transform: translateX(0%);
 }
+
+
