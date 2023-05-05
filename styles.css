@@ -20,7 +20,7 @@ h1 {
   margin-bottom: 0;
   font-family: 'IBM Plex Mono', monospace;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 6.625rem;
+  font-size: 7.625rem;
   color: #df827a;
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
@@ -50,7 +50,7 @@ h3 {
   width: 50%;
   margin: 0 auto 0 auto;
   color: #F8DAD4;
-  font-size: 25px;
+  font-size: 40px;
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
@@ -61,7 +61,7 @@ h3 {
 .div1 {
   background-color: #7AD7DF;
   margin-left: 0;
-  padding-top: 100px;
+  padding-top: 220px;
 }
 
 .div2 {
