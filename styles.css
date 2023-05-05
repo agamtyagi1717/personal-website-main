@@ -192,12 +192,20 @@ a {
 }
 
 .primary-header{
-  
   align-items: center;
   justify-content: space-between;
 }
 
+.primary-header button{
+  position: fixed;
+}
+.primary-header nav{
+  position: fixed;
+  top: 1rem;
+  right:0rem;
+}
 .primary-navigation{
+  
   text-align: left;
   font-size: 23px;;
   list-style: none;
@@ -251,6 +259,7 @@ a {
   }
 
   .mobile-nav-toggle{
+    position: absolute;
     display: block;
     z-index: 9999;
     position: absolute;
@@ -273,7 +282,7 @@ a {
     display:none;
   }
   .primary-navigation{
-    padding-block: 1rem;
+    padding-block: 0.8rem;
     padding-inline: clamp(3rem, 5vw, 8rem);
   }
 }
@@ -281,7 +290,7 @@ a {
 @media (min-width: 714px){
   .primary-navigation{
     --gap:clamp(1.5rem, 5vw, 3rem);
-    padding-block: 1.2rem;
+    padding-block: 0.8rem;
     padding-inline: clamp(3rem, 5vw, 8rem);
   }
 }
