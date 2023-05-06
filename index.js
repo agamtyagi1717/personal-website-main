@@ -22,10 +22,10 @@ $("#contact-form-button").click(function () {
 function sendMail(){
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "agamtyagi1717@gmail.com",
-        Password : "1ED861BADC8DD0DCF6CC2D953918E64981F9",
+        Username : "agamtyagi17@gmail.com",
+        Password : "8854FA9A52D7F4B59F288634EE954FA84420",
         To : 'agamtyagi1717@gmail.com',
-        From : 'agamtyagi1717@gmail.com',
+        From : 'agamtyagi17@gmail.com',
         Subject : "New Contact Form Enquiry",
         Body : "Name: "+ document.getElementById("name").value + "<br>Email: "+ document.getElementById("email").value + "<br>Phone Number: " + document.getElementById("phone").value + "<br>Enquiry: " + document.getElementById("message").value
     }).then(
