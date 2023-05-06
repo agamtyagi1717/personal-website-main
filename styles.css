@@ -113,13 +113,13 @@ form button {
   text-shadow: 1px 1px 0px #000000;
   color: #ffffff;
   font-size: 20px;
-  background: #df827a;
+  background: #FF6961;
   padding: 10px 20px 10px 20px;
   border: solid #000000 3px;
   text-decoration: none;
 }
 .send-button-clicked{
-  background-color: #00FF00;
+  background-color: #77DD77;
 }
 
 form button:hover {
