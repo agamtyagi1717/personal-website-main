@@ -116,10 +116,10 @@
     <hr><br>
 
     <div id="Contact-me" class="contact-me">
-      <h2>Get In Touch</h2>
+      <!-- <h2>Get In Touch</h2> -->
       <h3>Student at MAIT Delhi.</h3>
       <p class="scaling">I'm almost certainly skipping classes. Hit me up!</p><br>
-      <button id="contact-form-button" aria-expanded="false" class="contact-btn">CONTACT ME</button><br><br>
+      <button id="contact-form-button" aria-expanded="false" class="contact-btn">CONTACT FORM</button><br><br>
     </div>
   </div>
 
@@ -127,13 +127,15 @@
 
     <div class="contact-form-content">
       
-      <form>
+      <form onsubmit="sendMail(); reset(); return false">
+        <h2>Get in Touch</h2>
+        <br>
         <input type="text" id="name" placeholder="Your name: " required>
         <input type="email" id="email" placeholder="Email Address: " required>
         <input type="text" id="phone" placeholder="Phone Number(optional): ">
-        <textarea id="message" rows="8" placeholder="How can I help you?"></textarea>
+        <textarea id="message" rows="8" placeholder="How may I help you?"></textarea>
         <br>
-        <button type="submit">Send</button>
+        <button class="" id="send" type="submit">Send</button>
       </form>
 
     </div>

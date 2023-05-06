@@ -18,3 +18,19 @@ navToggle.addEventListener("click", ()=>{
 $("#contact-form-button").click(function () {
     $("#contact-form-id").slideToggle(400);
 });
+
+function sendMail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "agamtyagi17@gmail.com",
+        Password : "8854FA9A52D7F4B59F288634EE954FA84420",
+        To : 'agamtyagi1717@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: "+ document.getElementById("name").value + "<br>Phone Number: " + document.getElementById("phone").value + "<br>Enquiry: " + document.getElementById("message").value
+    }).then(
+    //   message => alert("Thank You! I'll get back to you ASAP")
+        document.getElementById("send").innerHTML="Email Sent, thank you!",
+        document.getElementById("send").setAttribute("class", "send-button-clicked")
+    );
+}

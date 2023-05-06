@@ -20,7 +20,7 @@ h1 {
   margin-bottom: 0;
   font-family: 'IBM Plex Mono', monospace;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 7.625rem;
+  font-size: 6.625rem;
   color: #df827a;
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
@@ -50,7 +50,7 @@ h3 {
   width: 50%;
   margin: 0 auto 0 auto;
   color: #F8DAD4;
-  font-size: 35px;
+  font-size: 25px;
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
@@ -117,6 +117,9 @@ form button {
   padding: 10px 20px 10px 20px;
   border: solid #000000 3px;
   text-decoration: none;
+}
+.send-button-clicked{
+  background-color: #00FF00;
 }
 
 form button:hover {
@@ -313,7 +316,7 @@ a {
 @media (max-width: 500px) {
 
   form input, form textarea{
-    width: 70%;
+    width: 85%;
     padding: 10px;
     font-size: 13px;
   }
