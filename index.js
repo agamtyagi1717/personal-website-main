@@ -34,3 +34,12 @@ function sendMail(){
         document.getElementById("send").setAttribute("class", "send-button-clicked")
     );
 }
+
+let kanyeQuote = document.getElementById('kanyeQuote');
+      function fetchData() {
+         fetch('https://api.kanye.rest/')
+         .then(response => response.json())
+         .then(data => {
+            kanyeQuote.innerHTML = "<strong> <q>" + data.quote + "</q></strong>" + "<br/>";
+         })
+      }

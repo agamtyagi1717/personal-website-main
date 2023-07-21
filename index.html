@@ -12,6 +12,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,9 +106,15 @@
         <p>One of the constants of life, hopefully. Highest level played? State. Favorite NBA player? Foolish question. Brodie.</p>
       </div>
       <div class="skill-row">
-        <img class="hobby-image-2" src="./Images/headphones.png" alt="creative">
+        <!-- <img class="hobby-image-2" src="./Images/headphones.png" alt="creative"> -->
+        
+        <iframe class="spotifyPlayer" src="https://open.spotify.com/embed/album/4SZko61aMnmgvNhfhgTuD3?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <h3>Music</h3>
-        <p>A hobby exclusive only to myself because of my immense uniqueness. <strong><a class="footer-link"href="https://open.spotify.com/user/dqpqw3i0mvdid622iirawgcuy?si=d29b5d170ffa41c2">Click here</a> </strong>to tap into my very public music taste.</p>
+        <p>What else is there to say except that he made Graduation?
+          <br>
+          <button class="kanye" onclick = "fetchData()"> Kanye quote generator(using Rest API) </button>
+          <div id = "kanyeQuote">  </div> 
+        </p>
       </div>
       <div class="skill-row">
         <img class="hobby-image-1" src="./Images/gaming.png" alt="">
