@@ -336,10 +336,15 @@ a {
   padding-left:4%;
 }
 .logo{  
+  z-index: 999;
   width: 4rem;
-  margin: 1rem;
+  position: fixed;
   border-radius: 50%;
   border: 2px solid #df827a;
+}
+.logo-div{  
+  width: 4rem;
+  margin: 1rem;
 }
 
 .flex{
@@ -380,6 +385,45 @@ a {
   backdrop-filter: blur(1rem);
 }
 
+.nav-hr{
+  border-top-style:double;
+  border-width: 8px;
+  z-index: 998;
+  margin-top: 26px;
+  margin-left: 52px;
+  position: fixed;
+  width: 70%;
+  border-color: black;
+}
+
+.wavy{
+  z-index: 998;
+  /* margin-top: 100px; */
+  margin-left: 56px;
+  position: fixed;
+  /* overflow: hidden; */
+}
+.wavy::before{
+  left: 0;
+  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+  font-size: 25px;
+  position: absolute;
+  color: transparent;
+  text-decoration-style:wavy ;
+  text-decoration-color: black ;
+  text-decoration-line: underline;
+  animation: animate linear 2s infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateX(1px);
+  }
+  100%{
+    transform: translateX(50px);
+  }
+}
+
 .primary-navigation a{
   text-decoration: none;
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
@@ -404,6 +448,13 @@ a {
 
 
 @media (max-width: 500px) {
+
+  .wavy{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
 
   form input, form textarea{
     width: 85%;
@@ -617,7 +668,7 @@ a {
 }
 
 .work{
-  /* border-radius: 9px; */
+  border-radius: 9px;
   border: #000000 solid 2px;
   position: relative;
   overflow: hidden;
