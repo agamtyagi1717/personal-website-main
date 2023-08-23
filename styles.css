@@ -240,6 +240,7 @@ a {
   top: 9px;
   width: 27px;
   height: 27px;
+  padding-inline: 5px;
 }
 
 
@@ -451,9 +452,14 @@ a {
 
   .wavy{
     display: none;
+    left: -7rem;
+    top: 1.5rem;
   }
   .logo{
-    display: none;
+    /* display: none; */
+    left: 2rem;
+    width: 2.5rem;
+    top: 2rem;
   }
 
   form input, form textarea{
