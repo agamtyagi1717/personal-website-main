@@ -666,6 +666,12 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
+/* #Projects{
+  padding-block: 20px;
+  background-color: #7AD7DF;
+  border-block: 3px black solid;
+} */
+
 .work-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
@@ -674,7 +680,7 @@ a {
 }
 
 .work{
-  border-radius: 9px;
+  /* border-radius: 9px; */
   border: #000000 solid 2px;
   position: relative;
   overflow: hidden;
@@ -754,4 +760,20 @@ a {
     font-size: 14px;
   }
   
+} 
+
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 7px; 
+  background-color: #000; 
 }
+::-webkit-scrollbar-thumb {
+  background-color: #FF6961;
+  /* border-radius: 6px; */
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fd5249; 
+}
+
+
