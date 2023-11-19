@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   text-align: center;
@@ -228,6 +231,7 @@ hr {
   border-width: 8px;
   border-color: gray;
   width: 7%;
+  display: none;
 }
 
 a {
@@ -557,6 +561,12 @@ a {
   .profile{
     min-width: 95%;
   }
+  .scroller{
+    min-width: 100%;
+  }
+  .skillbox{
+    max-width: 170px;
+  }
 }
 
 @media (min-width: 500px) and (max-width:714px){
@@ -590,21 +600,48 @@ a {
   gap: 10px;
   margin: 30px auto 10px auto;
 }
+.scroller{
+  width: 60%;
+  margin: 30px auto 10px auto;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+}
 
-.box{
-  width: fit-content;
+.skill-box-container{
+  padding-block: 10px;
+  display: flex;
+  gap: 10px;
+  animation: slide 8s infinite linear;
+}
+
+.scroller:hover .skill-box-container{
+  animation-play-state: paused;
+}
+
+.skillbox{
+  width: 200px;
   /* background: linear-gradient(135deg, #000000, #FF6961); */
   border: black solid 2px;
   transition: all .14s ease-out;
   padding-top: 10px;
 }
 
-.box:hover{
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.skillbox:hover{
   box-shadow: 4px 4px 0 #000;
   transform: translate(-4px,-4px);
 }
 
-.box h3{
+.skillbox h3{
   width: fit-content;
   margin: 10px auto 20px auto;
   font-size: 130%;
@@ -666,11 +703,9 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
-/* #Projects{
-  padding-block: 20px;
-  background-color: #7AD7DF;
-  border-block: 3px black solid;
-} */
+#Experience{
+  padding-block: 70px;
+}
 
 .work-list{
   display: grid;
@@ -684,7 +719,7 @@ a {
   border: #000000 solid 2px;
   position: relative;
   overflow: hidden;
-  height: 230px;
+  height: auto;
 }
 
 .work img{
@@ -698,9 +733,6 @@ a {
 .work:hover img{
   transform: scale(1.1);
 }
-
-
-
 .work:hover .layer{
   height: 100%;
 }
@@ -778,3 +810,6 @@ a {
 }
 
 
+.experienceSection{
+  /* background-color: #000; */
+}
