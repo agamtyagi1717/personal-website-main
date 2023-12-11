@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
    <head>
-      <meta charset="utf-8">
+      <meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>Agam Tyagi</title>
       <link rel="stylesheet" href="styles.css">
@@ -76,7 +76,7 @@
          <div class="profile" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
             <img class="hello" src="./Images/profile.gif" alt="profile">
             <h2>Hey!</h2>
-            <p id="intro" class="scaling"></p>
+            <p id="intro" class="scaling">I am a passionate web developer based in India with an eye for captivating design. I love creating user-friendly websites that leave a lasting impression. Optimizing with data structures is my forte. Continuous learning drives my innovation.</p>
             <br>
             <a href="./resume.pdf" download="Agam Tyagi Resume.pdf">
             <button class="button-18">Resume ↗</button>
@@ -235,10 +235,88 @@
          </div>
          
          <!-- Project Section -->
-         <div id="Projects" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+         <div id="Projects">
             <h2>Projects</h2>
             <br/>
-            <p>Hover to view details</p>
+
+            <div class="projects-container"  data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+               <div class="tabscontainer">
+                 <div class="tabswitcher">
+                   <button class="corner1 activetab-btn tabbutton" id="button1" onclick="switchTab(this)">
+                     Article Summarizer
+                   </button>
+                   <button class="tabbutton" id="button2" onclick="switchTab(this)">PerceptivePages</button>
+                   <button class="tabbutton" id="button3" onclick="switchTab(this)">ShowsDB</button>
+                   <button class="tabbutton" id="button4" onclick="switchTab(this)">
+                     ShareBoard
+                   </button>
+                   <button class="corner2 tabbutton" id="button5" onclick="switchTab(this)">
+                     Evogym
+                   </button>
+                 </div>
+         
+                 <div class="tabs">
+                  <div id="tab1" class="activetab tab">
+                     <img src="./Images/work-1.png" alt="work-1">
+                     <div class="tabright">
+                        <h3>Open-AI Article Summarizer</h3>
+                        <p>A React App that employs OpenAI and Rapid API to summarize articles and webpages effortlessly</p>
+                        
+                           <a rel="noopener" target="_blank" href="https://agam-summarizer.vercel.app/"><button type="button" class="live-btn">Live Site</button></a>
+                           <a rel="noopener" target="_blank" href="https://github.com/agamtyagi1717/ai-summarizer"><button type="button" class="source-btn">Source Code</button></a> 
+                        
+                     </div> 
+                  </div>
+                  <div id="tab2" class="tab">
+                     <img src="./Images/perceptivepages.png" alt="work-1">
+                     <div class="tabright">
+                        <h3>PerceptivePages</h3>
+                        <p>A full-stack MERN blogging app with JWT user authentication. Users can view all posts, create new ones or edit existing ones</p>
+                        
+                           <a rel="noopener" target="_blank" href="https://mernblog-agam.vercel.app/"><button type="button" class="live-btn">Live Site</button></a>
+                           <a rel="noopener" target="_blank" href="https://github.com/agamtyagi1717/mern-blog"><button type="button" class="source-btn">Source Code</button></a> 
+                        
+                     </div>
+                  </div>
+                  <div id="tab3" class="tab">
+                     <img src="./Images/work-2.png" alt="work-1">
+                     <div class="tabright">
+                        <h3>ShowsDB</h3>
+                        <p>A stunning and responsive ReactJS App that allows users to search for and get info on any TV show</p>
+                        
+                           <a rel="noopener" target="_blank" href="https://showsdb.vercel.app/"><button type="button" class="live-btn">Live Site</button></a>
+                           <a rel="noopener" target="_blank" href="https://github.com/agamtyagi1717/ShowsDB"><button type="button" class="source-btn">Source Code</button></a> 
+                        
+                     </div>
+                  </div>
+                  <div id="tab4" class="tab">
+                     <img src="./Images/shareboard.png" alt="work-1">
+                     <div class="tabright">
+                        <h3>ShareBoard Online Clipboard</h3>
+                        <p>MERN App to seamlessly share and sync your content across the internet</p>
+                        
+                           <a rel="noopener" target="_blank" href="https://shareboard.vercel.app/"><button type="button" class="live-btn">Live Site</button></a>
+                           <a rel="noopener" target="_blank" href="https://github.com/agamtyagi1717/shareboard"><button type="button" class="source-btn">Source Code</button></a> 
+                        
+                     </div>
+                  </div>
+                  <div id="tab5" class="tab">
+                     <img src="./Images/evogym.png" alt="work-1">
+                     <div class="tabright">
+                        <h3>Evogym</h3>
+                        <p>A TypeScript frontend project that uses Tailwind CSS and Framer Motion for smooth animations</p>
+                        
+                           <a rel="noopener" target="_blank" href="https://gym-typescript-theta.vercel.app/"><button type="button" class="live-btn">Live Site</button></a>
+                           <a rel="noopener" target="_blank" href="https://github.com/agamtyagi1717/gym-typescript"><button type="button" class="source-btn">Source Code</button></a> 
+                        
+                     </div>
+                  </div>
+                  
+                 </div>
+               </div>
+             </div>
+
+            <!-- <p>Hover to view details</p>
             <div class="box-container">
                <div class="work-list">
                   <div class="work" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
@@ -307,24 +385,19 @@
                         </div>
                      </div>
                   </div>
-                  <!-- <div class="work" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
-                     <img src="./Images/work-4.png" alt="work-3">
-                     <div class="layer">
-                        <h3>Speech to Text Convertor</h3>
-                        <p>A React app that converts speech to text using hooks.</p>
-                        <div>
-                           <a rel="noopener" target="_blank" href="https://agam-speechtotext.vercel.app/"><button type="button" class="live-btn">Live Site</button></a>
-                           <a rel="noopener" target="_blank" href="https://github.com/agamtyagi1717/speech-to-text"><button type="button" class="source-btn">Source Code</button></a> 
-                        </div>
-                     </div>
-                  </div> -->
+                  
                </div>
-            </div>
+            </div> -->
          </div>
 
-         <div id="Experience" class="experienceSection">
+         
+
+
+         <!-- Work Experience -->
+
+         <!-- <div id="Experience" class="experienceSection">
             <h2>Work Experience</h2>
-         </div>
+         </div> -->
 
          <br>
          <hr>
@@ -411,12 +484,12 @@
 
    </body>
 
-   <script src="https://cdn.blobity.dev/by.js"></script>
+   <!-- <script src="https://cdn.blobity.dev/by.js"></script>
   <script>
     const blobity = new Blobity({
       zIndex: "1000",
       invert: "true",
       dotColor: "#FF6961",
     });
-  </script>
+  </script> -->
 </html>

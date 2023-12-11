@@ -53,16 +53,36 @@ function fetchData() {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#intro", {
-  scrollTrigger: {
-    trigger: "#intro",
-    start: "top bottom",
-    end: "500 bottom",
-    // scrub: true,
-    // markers: "true"
-  },
-  duration: 3,
-  text: "I am a passionate web developer based in India with an eye for captivating design. I love creating user-friendly websites that leave a lasting impression. Optimizing with data structures is my forte. Continuous learning drives my innovation.",
-  ease: "none",
-});
+// gsap.to("#intro", {
+//   scrollTrigger: {
+//     trigger: "#intro",
+//     start: "top bottom",
+//     end: "500 bottom",
+//     // scrub: true,
+//     // markers: "true"
+//   },
+//   duration: 3,
+//   text: "I am a passionate web developer based in India with an eye for captivating design. I love creating user-friendly websites that leave a lasting impression. Optimizing with data structures is my forte. Continuous learning drives my innovation.",
+//   ease: "none",
+// });
+
+
+
+function switchTab(clickedButton) {
+  var allButtons = document.querySelectorAll(".tabbutton");
+  allButtons.forEach(function (button) {
+    button.classList.remove("activetab-btn");
+  });
+
+  var allTabs = document.querySelectorAll(".tab");
+  allTabs.forEach(function (tab) {
+    tab.classList.remove("activetab");
+  });
+
+  clickedButton.classList.add("activetab-btn");
+
+  var buttonIndex = Array.from(allButtons).indexOf(clickedButton);
+
+  allTabs[buttonIndex].classList.add("activetab");
+}
 
