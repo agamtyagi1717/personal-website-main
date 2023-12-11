@@ -819,6 +819,12 @@ a {
   font-size: 19px;
   /* transition: background-color 0.4s; */
 }
+.tabbutton:hover{
+  background-color: #e7e7e7;
+}
+.activetab-btn:hover{
+  background: rgb(255, 83, 73);
+}
 .activetab-btn {
   text-shadow: 1px 1px 0px #000000;
   color: #ffffff;
